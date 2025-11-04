@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saber Mais | Jogos</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+  <script src="../assets/js/main.js"></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="dashboard.html" title="Go to Home">
+      <img class="navbar-logo" src="../assets/images/logo.png" alt="logo">
+    </a>
+    <nav class="navbar-menu">
+      <a href="dashboard.html" title="Go to Home">
+        <img class="home-icon" src="../assets/images/home-icon.png" alt="home"> <span data-translate="dashboard.nav.home">Início</span>
+      </a>
+      <a href="lessons.html" title="Go to Video Lessons">
+        <img class="lessons-icon" src="../assets/images/lessons-icon.png" alt="lessons"> <span data-translate="dashboard.nav.lessons">Videoaulas</span>
+      </a>
+      <a href="games.html" title="Go to Games">
+        <img class="games-icon" src="../assets/images/games-icon.png" alt="games"> <span data-translate="dashboard.nav.games">Jogos</span>
+      </a>
+    </nav>
+    <div class="navbar-user"><span data-translate="dashboard.nav.user">Usuário</span><img src="../assets/images/user-icon.png" alt="User"></div>
+  </header>
+
+  <div class="language-selector">
+    <button class="language-button" id="languageBtn">
+
+      <img class="globe-icon" src="../assets/images/icon-selector-language.png" alt="language selector icon">
+      <span class="current-language">PT-BR</span>
+      <img class="arrow-icon" src="../assets/images/chevron-down.png" alt="arrow icon">
+    </button>
+
+    <div class="language-dropdown" id="languageDropdown">
+      <div class="dropdown-header">
+        <p data-translate="language.current">Sua região atual é:</p>
+        <h3>Brasil – Português</h3>
+      </div>
+
+      <div class="dropdown-divider"></div>
+
+      <p class="dropdown-subtitle" data-translate="language.select">Selecione uma região diferente:</p>
+
+      <div class="language-list">
+        <button class="language-option active" data-lang="pt-BR" data-name="Brasil – Português">
+          Brasil – Português
+        </button>
+        <button class="language-option" data-lang="en-US" data-name="United States – English">
+          United States – English (Inglês)
+        </button>
+        <button class="language-option" data-lang="es-ES" data-name="España – Español">
+          España – Español (Espanhol)
+        </button>
+        <button class="language-option" data-lang="fr-FR" data-name="France – Français">
+          France – Français (Francês)
+        </button>
+        <button class="language-option" data-lang="de-DE" data-name="Deutschland – Deutsch">
+          Deutschland – Deutsch (Alemão)
+        </button>
+        <button class="language-option" data-lang="it-IT" data-name="Italia – Italiano">
+          Italia – Italiano (Italiano)
+        </button>
+        <button class="language-option" data-lang="zh-CN" data-name="中国 – 中文">
+          中国 – 中文 (Chinês)
+        </button>
+        <button class="language-option" data-lang="ja-JP" data-name="日本 – 日本語">
+          日本 – 日本語 (Japonês)
+        </button>
+        <button class="language-option" data-lang="ko-KR" data-name="한국 – 한국어">
+          한국 – 한국어 (Coreano)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="educational-games">
+    <div class="section-header">
+      <div class="title-area">
+        <h1 data-translate="games.title">Jogos Educativos</h1>
+        <p data-translate="games.subtitle">Aprenda brincando e ganhe pontos!</p>
+      </div>
+
+      <div class="points-box">
+        <i class="trophy"><img src="../assets/images/trophy-main.png" alt="Trophy"></i>
+        <div class="points-text">
+          <span data-translate="games.points">Seus Pontos</span>
+          <strong>1,250 <span data-translate="games.pts">pts</span></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn tab-button active" data-target="portugues">
+        <img src="../assets/images/portuguese-icon-lessons.png" alt="Portuguese" class="portuguese-icon-lessons">
+        <p data-translate="games.portuguese">Português</p>
+      </button>
+      <button class="tab-btn tab-button" data-target="matematica">
+        <img src="../assets/images/math-icon-lessons.png" alt="Mathematics" class="math-icon-lessons">
+        <p data-translate="games.mathematics">Matemática</p>
+      </button>
+    </div>
+
+    <div class="games-wrap">
+      <div class="game-grid" data-category="portugues">
+        <div class="game-card">
+          <img src="../assets/images/read-interpret-text-image.png" alt="Read and interpret text image">
+          <div class="card-content">
+            <h3 data-translate="games.portuguese.quiz.title">Quiz de Interpretação</h3>
+            <p data-translate="games.portuguese.quiz.desc">Teste sua compreensão de textos com perguntas de múltipla escolha e explicações passo a passo.</p>
+            <div class="card-meta">
+              <div class="card-info">
+                <span> <img src="../assets/images/trophy-points.png" alt="Trophy points" class="trophy-points"> 80
+                  <span data-translate="games.pts">pts</span></span>
+              </div>
+              <div class="quiz-icon">
+                <span data-translate="games.quiz">Quiz</span>
+              </div>
+            </div>
+            <button class="play-button">
+              <span><img src="../assets/images/play-icon.png" alt="Play icon"> <span data-translate="games.play">Jogar</span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <img src="../assets/images/computer-writing-image.png" alt="Computer writing">
+          <div class="card-content">
+            <h3 data-translate="games.portuguese.writing.title">Oficina de Redação</h3>
+            <p data-translate="games.portuguese.writing.desc">Pratique escrever textos curtos com prompts guiados e receba dicas de estrutura e vocabulário.</p>
+            <div class="card-meta">
+              <div class="card-info">
+                <span> <img src="../assets/images/trophy-points.png" alt="Trophy points" class="trophy-points"> 140
+                  <span data-translate="games.pts">pts</span></span>
+              </div>
+              <div class="quiz-icon">
+                <span data-translate="games.quiz">Quiz</span>
+              </div>
+            </div>
+            <button class="play-button">
+              <span><img src="../assets/images/play-icon.png" alt="Play icon"> <span data-translate="games.play">Jogar</span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-grid hidden" data-category="matematica">
+        <div class="game-card">
+          <img src="../assets/images/calc-math.png" alt="Mathematics game">
+          <div class="card-content">
+            <h3 data-translate="games.math.table.title">Tabuada Mágica</h3>
+            <p data-translate="games.math.table.desc">Pratique multiplicação de forma divertida com nossa tabuada interativa.</p>
+            <div class="card-meta">
+              <div class="card-info">
+                <span> <img src="../assets/images/trophy-points.png" alt="Trophy points" class="trophy-points"> 100
+                  <span data-translate="games.pts" class="games-pts">pts</span></span>
+              </div>
+              <div class="quiz-icon">
+                <span data-translate="games.quiz">Quiz</span>
+              </div>
+            </div>
+            <button class="play-button">
+              <span><img src="../assets/images/play-icon.png" alt="Play icon"> <span data-translate="games.play">Jogar</span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <img src="../assets/images/calc-math.png" alt="Mathematical operations game">
+          <div class="card-content">
+            <h3 data-translate="games.math.operations.title">Desafio das Operações</h3>
+            <p data-translate="games.math.operations.desc">Resolva problemas de adição, subtração, multiplicação e divisão.</p>
+            <div class="card-meta">
+              <div class="card-info">
+                <span> <img src="../assets/images/trophy-points.png" alt="Trophy points" class="trophy-points"> 220
+                  <span data-translate="games.pts">pts</span></span>
+              </div>
+              <div class="quiz-icon">
+                <span data-translate="games.quiz">Quiz</span>
+              </div>
+            </div>
+            <button class="play-button">
+              <span><img src="../assets/images/play-icon.png" alt="Play icon"> <span data-translate="games.play">Jogar</span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-games">
+    <h2 data-translate="games.popular.title">Jogos Populares</h2>
+    <div class="popular-grid">
+      <div class="popular-card-blue">
+        <div class="header-row">
+          <div class="popular-icon-blue">
+            <img src="../assets/images/play-icon-popular-games.png" alt="Play icon">
+          </div>
+          <h3 data-translate="games.popular.grammar.title">Quiz de Gramática</h3>
+        </div>
+        <div class="popular-text card-blue">
+          <p data-translate="games.popular.grammar.desc">Teste seus conhecimentos de gramática portuguesa</p>
+        </div>
+        <div class="category-tag-blue">
+          <p data-translate="games.popular.grammar.tag">Português</p>
+        </div>
+      </div>
+
+      <div class="popular-card-green">
+        <div class="header-row">
+          <div class="popular-icon-green">
+            <img src="../assets/images/play-icon-popular-games.png" alt="Play icon">
+          </div>
+          <h3 data-translate="games.popular.table.title">Tabuada Mágica</h3>
+        </div>
+        <div class="popular-text">
+          <p data-translate="games.popular.table.desc">Pratique multiplicação de forma divertida</p>
+        </div>
+        <div class="category-tag-green">
+          <p data-translate="games.popular.table.tag">Matemática</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logo-rodape">
+      <img src="../assets/images/logo.png" alt="Saber+ Logo">
+    </div>
+    <p data-translate="games.footer.text">Transformando a educação brasileira com tecnologia e qualidade.</p>
+    <small data-translate="games.footer.rights">© 2025 Saber+. Todos os direitos reservados.</small>
+  </footer>
+
+  <script src="../assets/js/modules/language-selector.js"></script>
+</body>
+
+</html>

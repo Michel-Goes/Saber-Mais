@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saber Mais | Videoaulas</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+  <script src="../assets/js/main.js"></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="dashboard.html" title="Go to Home">
+      <img class="navbar-logo" src="../assets/images/logo.png" alt="logo">
+    </a>
+    <nav class="navbar-menu">
+      <a href="dashboard.html" title="Go to Home">
+        <img class="home-icon" src="../assets/images/home-icon.png" alt="home"> <span data-translate="dashboard.nav.home">Início</span>
+      </a>
+      <a href="lessons.html" title="Go to Video Lessons">
+        <img class="lessons-icon" src="../assets/images/lessons-icon.png" alt="lessons"> <span data-translate="dashboard.nav.lessons">Videoaulas</span>
+      </a>
+      <a href="games.html" title="Go to Games">
+        <img class="games-icon" src="../assets/images/games-icon.png" alt="games"> <span data-translate="dashboard.nav.games">Jogos</span>
+      </a>
+    </nav>
+    <div class="navbar-user"><span data-translate="dashboard.nav.user">Usuário</span><img src="../assets/images/user-icon.png" alt="User"></div>
+  </header>
+
+  <div class="language-selector">
+    <button class="language-button" id="languageBtn">
+
+      <img class="globe-icon" src="../assets/images/icon-selector-language.png" alt="language selector icon">
+      <span class="current-language">PT-BR</span>
+      <img class="arrow-icon" src="../assets/images/chevron-down.png" alt="arrow icon">
+    </button>
+
+    <div class="language-dropdown" id="languageDropdown">
+      <div class="dropdown-header">
+        <p data-translate="language.current">Sua região atual é:</p>
+        <h3>Brasil – Português</h3>
+      </div>
+
+      <div class="dropdown-divider"></div>
+
+      <p class="dropdown-subtitle" data-translate="language.select">Selecione uma região diferente:</p>
+
+      <div class="language-list">
+        <button class="language-option active" data-lang="pt-BR" data-name="Brasil – Português">
+          Brasil – Português
+        </button>
+        <button class="language-option" data-lang="en-US" data-name="United States – English">
+          United States – English (Inglês)
+        </button>
+        <button class="language-option" data-lang="es-ES" data-name="España – Español">
+          España – Español (Espanhol)
+        </button>
+        <button class="language-option" data-lang="fr-FR" data-name="France – Français">
+          France – Français (Francês)
+        </button>
+        <button class="language-option" data-lang="de-DE" data-name="Deutschland – Deutsch">
+          Deutschland – Deutsch (Alemão)
+        </button>
+        <button class="language-option" data-lang="it-IT" data-name="Italia – Italiano">
+          Italia – Italiano (Italiano)
+        </button>
+        <button class="language-option" data-lang="zh-CN" data-name="中国 – 中文">
+          中国 – 中文 (Chinês)
+        </button>
+        <button class="language-option" data-lang="ja-JP" data-name="日本 – 日本語">
+          日本 – 日本語 (Japonês)
+        </button>
+        <button class="language-option" data-lang="ko-KR" data-name="한국 – 한국어">
+          한국 – 한국어 (Coreano)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="video-section educational-games">
+    <div class="video-header">
+      <h1 data-translate="lessons.title">Videoaulas</h1>
+      <p class="class y" data-translate="lessons.subtitle">Aprenda com os melhores professores do país</p>
+    </div>
+
+    <div class="progress-box">
+      <div class="progress-inner">
+        <div class="progress-icon" aria-hidden="true">
+          <img src="../assets/images/simbol-check.png" alt="Check" width="48" height="48">
+        </div>
+        <div class="progress-copy">
+          <p class="title-box"><strong data-translate="lessons.progress">Progresso em Português</strong></p>
+          <span class="progress-number" data-translate="lessons.progress.count">0/2 aulas (0%)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn tab-button active" data-target="portugues">
+        <img src="../assets/images/portuguese-icon-lessons.png" alt="Portuguese" class="portuguese-icon-lessons">
+        <p data-translate="lessons.portuguese">Português</p>
+      </button>
+      <button class="tab-btn tab-button" data-target="matematica">
+        <img src="../assets/images/math-icon-lessons.png" alt="Mathematics" class="math-icon-lessons">
+        <p data-translate="lessons.mathematics">Matemática</p>
+      </button>
+    </div>
+
+    <div id="tab-portugues" class="video-grid tab-panel">
+      <div class="video-card">
+        <div class="thumb">
+          <img src="../assets/images/portuguese-image1-lessons.png" alt="Open book">
+          <div class="play-btn">
+            <img src="../assets/images/loading-play.png" alt="Play" class="play-icon-img">
+          </div>
+        </div>
+        <div class="info">
+          <h3 data-translate="lessons.portuguese.video1.title">Introdução à Gramática Portuguesa</h3>
+          <p data-translate="lessons.portuguese.video1.desc">Conceitos básicos da gramática portuguesa: classes gramaticais e estrutura da língua.</p>
+          <div class="clock"><img src="../assets/images/clock-image.png" alt="Clock image"> 15min</div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="thumb">
+          <img src="../assets/images/portuguese-image2-lessons.png" alt="Stacked books">
+          <div class="play-btn">
+            <img src="../assets/images/loading-play.png" alt="Play" class="play-icon-img">
+          </div>
+        </div>
+        <div class="info">
+          <h3 data-translate="lessons.portuguese.video2.title">Substantivos e Adjetivos</h3>
+          <p data-translate="lessons.portuguese.video2.desc">Você vai aprender a identificar e usar substantivos e adjetivos corretamente.</p>
+          <div class="clock"><img src="../assets/images/clock-image.png" alt="Clock image"> 20min</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-matematica" class="video-grid tab-panel hidden">
+      <div class="video-card">
+        <div class="thumb">
+          <img src="../assets/images/calc-math.png" alt="Numbers and calculation">
+          <div class="play-btn">
+            <img src="../assets/images/loading-play.png" alt="Play" class="play-icon-img">
+          </div>
+        </div>
+        <div class="info">
+          <h3 data-translate="lessons.math.video1.title">Números Naturais</h3>
+          <p data-translate="lessons.math.video1.desc">Introdução aos números naturais: contagem, ordem e operações básicas.</p>
+          <div class="clock"><img src="../assets/images/clock-image.png" alt="Clock image"> 12min</div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="thumb">
+          <img src="../assets/images/math-ad-sub.png" alt="Addition and Subtraction">
+          <div class="play-btn">
+            <img src="../assets/images/loading-play.png" alt="Play" class="play-icon-img">
+          </div>
+        </div>
+        <div class="info">
+          <h3 data-translate="lessons.math.video2.title">Adição e Subtração</h3>
+          <p data-translate="lessons.math.video2.desc">Como realizar operações de adição e subtração com números naturais.</p>
+          <div class="clock"><img src="../assets/images/clock-image.png" alt="Clock image"> 18min</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logo-rodape">
+      <img src="../assets/images/logo.png">
+    </div>
+    <p data-translate="lessons.footer.text">Transformando a educação brasileira com tecnologia e qualidade.</p>
+    <small data-translate="lessons.footer.rights">© 2025 Saber+. Todos os direitos reservados.</small>
+  </footer>
+
+  <script src="../assets/js/modules/language-selector.js"></script>
+  <script src="../assets/js/modules/lessons.js"></script>
+</body>
+
+</html>

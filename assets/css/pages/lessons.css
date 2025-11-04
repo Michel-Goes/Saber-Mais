@@ -1,0 +1,274 @@
+.video-section {
+  background: #e6edff;
+  padding: 2rem 2rem 6rem 2rem;
+  width: 100%;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 140px);
+  margin-top: 5%;
+}
+
+.video-section,
+.educational-games {
+  flex: 1;
+  min-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-section h1 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 100%;
+  color: #000000;
+  margin-left: 2%;
+}
+
+.video-section p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #4B5563;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.y {
+  margin-left: 2%;
+}
+
+
+.video-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transform: translateY(-45%);
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.video-section .section-header .progress-box {
+  margin-left: 0;
+  position: absolute;
+  right: 2rem;
+  top: 2.5rem;
+}
+
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 270px;
+  flex: 1;
+  justify-content: center;
+  align-content: start;
+  padding: 0 2rem 4rem 2rem;
+  padding-top: 4%;
+}
+
+.video-card {
+  position: relative;
+  width: 547px;
+  height: 508px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: translateY(-16px);
+}
+
+.video-card:first-child {
+  margin-left: -45px;
+}
+
+.video-card:last-child {
+  margin-right: -45px;
+}
+
+
+.thumb {
+  position: relative;
+}
+
+.thumb img {
+  width: 546px;
+  display: block;
+  height: 327px;
+  object-fit: cover;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 84px;
+  height: 84px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.play-btn:hover {
+  transform: translate(-50%, -50%) translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.play-btn img,
+.play-icon-img {
+  width: 27px;
+  height: 31px;
+  object-fit: contain;
+}
+
+
+.info {
+  padding: 18px 25px 15px 25px;
+}
+
+.info h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  margin: 0 0 8px 0;
+  flex-shrink: 0;
+}
+
+.info p {
+  color: rgba(75, 85, 99, 1);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  flex-grow: 1;
+  margin: 8px 0;
+}
+
+.clock {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}
+
+.clock img {
+  width: 12px;
+  height: 12px;
+}
+
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+  padding: 20px;
+}
+
+.video-modal .modal-inner {
+  background: #000;
+  width: min(1000px, 95%);
+  max-width: 1100px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-modal video,
+.video-modal iframe {
+  width: 100%;
+  height: 560px;
+  max-height: 75vh;
+  display: block;
+}
+
+.video-modal .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+.main-content {
+  padding: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+  min-height: calc(100vh - 140px);
+}
+
+.title-area h1 {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  padding-top: 3%;
+  display: flex;
+  transform: translate(2%);
+}
+
+.title-area p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: rgba(75, 85, 99, 1);
+  padding-top: 1%;
+  display: flex;
+  transform: translate(2.3%);
+}
+
+
+@media (max-width: 900px) {
+  .section-header {
+    display: block;
+  }
+
+  .section-header .progress-box,
+  .progress-box {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin: 1rem 0 0 0;
+    width: 100%;
+  }
+}
