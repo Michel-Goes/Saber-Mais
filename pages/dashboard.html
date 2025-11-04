@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saber Mais | Home</title>
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/modules/language-selector.js"></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="dashboard.html" title="Go to Home">
+      <img class="navbar-logo" src="../assets/images/logo.png" alt="logo">
+    </a>
+    <nav class="navbar-menu">
+      <a href="dashboard.html" title="Go to Home">
+        <img class="home-icon" src="../assets/images/home-icon.png" alt="home"> <span
+          data-translate="dashboard.nav.home">Início</span>
+      </a>
+      <a href="lessons.html" title="Go to Video Lessons">
+        <img class="lessons-icon" src="../assets/images/lessons-icon.png" alt="lessons"> <span
+          data-translate="dashboard.nav.lessons">Videoaulas</span>
+      </a>
+      <a href="games.html" title="Go to Games">
+        <img class="games-icon" src="../assets/images/games-icon.png" alt="games"> <span
+          data-translate="dashboard.nav.games">Jogos</span>
+      </a>
+    </nav>
+    <div class="navbar-user"><span data-translate="dashboard.nav.user">Usuário</span><img
+        src="../assets/images/user-icon.png" alt="User"></div>
+  </header>
+
+  <div class="language-selector">
+    <!-- <button class="language-button" id="languageBtn">
+
+      <img class="globe-icon" src="../assets/images/icon-selector-language.png" alt="language selector icon">
+      <span class="current-language">PT-BR</span>
+      <img class="arrow-icon" src="../assets/images/chevron-down.png" alt="arrow icon">
+    </button> -->
+
+    <div class="language-dropdown" id="languageDropdown">
+      <div class="dropdown-header">
+        <p data-translate="language.current">Sua região atual é:</p>
+        <h3>Brasil – Português</h3>
+      </div>
+
+      <div class="dropdown-divider"></div>
+
+      <p class="dropdown-subtitle" data-translate="language.select">Selecione uma região diferente:</p>
+
+      <div class="language-list">
+        <button class="language-option active" data-lang="pt-BR" data-name="Brasil – Português">
+          Brasil – Português
+        </button>
+        <button class="language-option" data-lang="en-US" data-name="United States – English">
+          United States – English (Inglês)
+        </button>
+        <button class="language-option" data-lang="es-ES" data-name="España – Español">
+          España – Español (Espanhol)
+        </button>
+        <button class="language-option" data-lang="fr-FR" data-name="France – Français">
+          France – Français (Francês)
+        </button>
+        <button class="language-option" data-lang="de-DE" data-name="Deutschland – Deutsch">
+          Deutschland – Deutsch (Alemão)
+        </button>
+        <button class="language-option" data-lang="it-IT" data-name="Italia – Italiano">
+          Italia – Italiano (Italiano)
+        </button>
+        <button class="language-option" data-lang="zh-CN" data-name="中国 – 中文">
+          中国 – 中文 (Chinês)
+        </button>
+        <button class="language-option" data-lang="ja-JP" data-name="日本 – 日本語">
+          日本 – 日本語 (Japonês)
+        </button>
+        <button class="language-option" data-lang="ko-KR" data-name="한국 – 한국어">
+          한국 – 한국어 (Coreano)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <h1>
+      <strong>
+        <span data-translate="dashboard.hero.title">Educação de Qualidade</span>
+        <div class="highlight" data-translate="dashboard.hero.highlight">para Todos os Brasileiros</div>
+      </strong>
+    </h1>
+    <p data-translate="dashboard.hero.subtitle">Plataforma completa de ensino de Português e Matemática, com videoaulas
+      interativas e jogos educativos.</p>
+    <div class="hero-actions">
+      <a href="lessons.html" class="btn btn-primary start-study-btn" title="Go to Video Lessons">
+        <img src="../assets/images/start-study.png" alt="Study" class="start-study"> Começar a Estudar
+      </a>
+      <a href="games.html" class="btn btn-outline explore-games-btn" title="Explore Games">
+        <img src="../assets/images/start-game.png" alt="Games" class="start-game"> Explorar Jogos
+      </a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features-inner">
+      <h2 class="features-title"><strong data-translate="dashboard.features.title">Por que escolher o Saber+?</strong>
+      </h2>
+      <p class="features-subtitle" data-translate="dashboard.features.subtitle">Uma plataforma completa e inovadora que
+        revoluciona a forma de aprender</p>
+
+      <div class="cards">
+        <div class="card">
+          <span class="icon"><img src="../assets/images/play-icon.png" alt="Play"></span>
+          <h3 data-translate="dashboard.features.videos.title">Videoaulas Interativas</h3>
+          <p data-translate="dashboard.features.videos.desc">Aulas dinâmicas com os melhores professores, organizadas
+            por disciplina e nível.</p>
+        </div>
+
+        <div class="card">
+          <span class="icon"><img src="../assets/images/game-icon.png" alt="Game"></span>
+          <h3 data-translate="dashboard.features.games.title">Jogos Educativos</h3>
+          <p data-translate="dashboard.features.games.desc">Aprenda brincando com jogos desafiadores, ideais para
+            reforçar o aprendizado.</p>
+        </div>
+
+        <div class="card">
+          <span class="icon"><img src="../assets/images/points-icon.png" alt="Points"></span>
+          <h3 data-translate="dashboard.features.points.title">Sistema de Pontuação</h3>
+          <p data-translate="dashboard.features.points.desc">Ganhe pontos, badges e recompensas de forma gamificada e
+            motivadora.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subjects">
+    <div class="subjects-inner">
+      <h2><strong data-translate="dashboard.subjects.title">Disciplinas em Foco</strong></h2>
+      <p class="subtitle" data-translate="dashboard.subjects.subtitle">Conteúdo especializado nas áreas mais importantes
+        da educação básica</p>
+
+      <div class="subjects-grid">
+        <div class="subject">
+          <div class="subject-icon bg-portugues">
+            <img src="../assets/images/portuguese-icon.png" alt="Portuguese" class="portuguese-icon">
+          </div>
+          <div class="subject-content">
+            <h3 data-translate="dashboard.subjects.portuguese.title">Português</h3>
+            <p data-translate="dashboard.subjects.portuguese.desc">Gramática, interpretação de texto, redação e
+              literatura brasileira com metodologia moderna e interativa.
+            </p>
+          </div>
+        </div>
+
+        <div class="subject">
+          <div class="subject-icon bg-matematica">
+            <img src="../assets/images/math-icon.png" alt="Mathematics" class="math-icon">
+          </div>
+          <div class="subject-content">
+            <h3 data-translate="dashboard.subjects.math.title">Matemática</h3>
+            <p data-translate="dashboard.subjects.math.desc">Aritmética, álgebra, geometria e estatística explicadas de
+              forma clara e com exercícios práticos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2 data-translate="dashboard.cta.title">Pronto para Transformar seu Aprendizado?</h2>
+    <p data-translate="dashboard.cta.subtitle">Junte-se a milhares de estudantes que já estão aprendendo de forma mais
+      eficiente</p>
+    <a href="lessons.html" class="btn btn-light" title="Go to Video Lessons">Começar Agora</a>
+  </section>
+
+  <footer>
+    <div class="logo-rodape">
+      <img src="../assets/images/logo.png" alt="Saber+ Logo">
+    </div>
+    <p data-translate="dashboard.footer.text">Transformando a educação brasileira com tecnologia e qualidade.</p>
+    <small data-translate="dashboard.footer.rights">© 2025 Saber+. Todos os direitos reservados.</small>
+  </footer>
+
+</body>
+
+</html>

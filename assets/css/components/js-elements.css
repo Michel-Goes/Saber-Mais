@@ -1,0 +1,12 @@
+
+
+/**
+ * JavaScript-controlled elements - Styles for dynamically generated content
+ */
+
+/* Error message styling for form validation */
+.error-message {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 5px;
+}

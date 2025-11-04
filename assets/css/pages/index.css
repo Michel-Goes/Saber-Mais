@@ -1,0 +1,459 @@
+/**
+ * Index page styles - Login page layout and components
+ */
+
+/* Main container for login page */
+.login-page-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #E6EDFF;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px 20px 20px;
+  background: #FAFAFA;
+  transform: translateX(-4%);
+  width: 106.2%;
+  margin-left: -2%;
+}
+
+.star-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin-left: 50%;
+  transform: translateY(15%);
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #4a9eff;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 60px 10px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Left section with decorative books illustration */
+.books-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.books-image {
+  height: 850px;
+  width: 630px;
+  display: flex;
+  transform: translateX(-15%);
+  margin-top: -5%;
+}
+
+/* Right section containing the login form */
+.login-section {
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 770px;
+  height: 900px;
+  margin-top: -12%;
+  margin-right: 5%;
+}
+
+/* Main login form container with card styling */
+.login-card {
+  background: white;
+  border-radius: 25px;
+  border: 1px solid #e6e6e6;
+  padding: 50px 45px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.login-logo {
+  width: 200px;
+  height: 80px;
+  display: block;
+  transform: translateX(65%);
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.form-group.has-error {
+  margin-bottom: 45px;
+}
+
+.form-group label {
+  display: flex;
+  transform: translateX(-5.2%);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.form-group input {
+  width: 480px;
+  height: 40px;
+  padding: 13px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  background: #f8f8f8;
+  display: flex;
+  transform: translateX(-5%);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4a9eff;
+  background: white;
+}
+
+.form-group input.error {
+  border-color: #ff4757;
+  box-shadow: 0 0 0 2px rgba(255, 71, 87, 0.1);
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+  z-index: 10;
+}
+
+.eye-icon {
+  width: 15px;
+  height: 13px;
+  display: flex;
+  transform: translateY(-5%);
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.remember-me {
+  display: flex;
+  transform: translateX(-10%);
+  font-size: 16px;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.checkbox:checked {
+  background: #807e7e;
+}
+
+.forgot-password {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.forgot-password:hover {
+  color: #4a9eff;
+}
+
+.login-button {
+  width: 480px;
+  padding: 8px;
+  background: #E6EDFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+  transform: translateX(-5%);
+}
+
+.login-button:hover {
+  background: #c0ddf5;
+}
+
+.login-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+  color: #666;
+}
+
+.signup-text a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  color: #4a9eff;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #cccccced;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 5%;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2.5px solid #ddd;
+  margin: 0 10px;
+}
+
+.social-login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.social-button {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.social-button:hover {
+  border-color: #4a9eff;
+  color: #4a9eff;
+}
+
+.error-message {
+  color: #ff4757;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+.bottom-section {
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  background: white;
+  padding: 0 80px;
+  margin-top: -3%;
+  align-self: center;
+  width: 1500px;
+  display: block;
+  transform: translateX(0.7%);
+}
+
+.star-icon-section {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  margin-left: -5%;
+  transform: translateY(5%);
+}
+
+.bottom-header {
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  width: 80%;
+  height: 100px;
+  margin: -22px auto 80px;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.bottom-header h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.bottom-header p {
+  color: #666;
+  font-size: 17px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 150px;
+  max-width: 1500px;
+  margin: 200px auto;
+  margin-left: -3%;
+}
+
+.course-card {
+  flex: 1;
+  min-width: 400px;
+  min-height: 200px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-image {
+  height: 133px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card1 {
+  background: linear-gradient(135deg, #fff9db 0%, #ffeaa7 100%);
+}
+
+.card2 {
+  background: linear-gradient(135deg, #a8daff 0%, #81c3f7 100%);
+}
+
+.card3 {
+  background: linear-gradient(135deg, #d4e8ff 0%, #b3d9ff 100%);
+}
+
+.course-content {
+  padding: 10px;
+  position: relative;
+  height: 250px;
+}
+
+.course-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+  margin-top: 20%;
+}
+
+.course-content p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666;
+  margin-bottom: 1px;
+  padding-right: 15px;
+}
+
+.view-course {
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #0F1419;
+  background-color: #E6F0FF;
+  border: 1px solid #D0E2FF;
+  border-radius: 8px;
+  padding: 5px 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.view-course:hover {
+  color: #4a9eff;
+}
+
+.footer {
+  font-size: 15px;
+  background-color: white;
+  border-top: 2px solid #8c8989;
+  color: #8c8989;
+  margin: 20px -30px 0;
+  display: block;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    padding: 40px 30px;
+  }
+
+  .books-section {
+    order: 2;
+  }
+
+  .login-section {
+    order: 1;
+  }
+}

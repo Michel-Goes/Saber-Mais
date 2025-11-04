@@ -1,0 +1,19 @@
+/* Main stylesheet - Imports all CSS modules */
+
+/* Core styles and base configurations */
+@import 'core/base.css';
+
+/* Reusable components */
+@import 'components/components.css';
+@import 'components/js-elements.css';
+@import 'components/language-selector.css';
+
+/* Utility classes */
+@import 'utils/spinner.css';
+@import 'utils/animations.css';
+
+/* Page-specific styles */
+@import 'pages/index.css';
+@import 'pages/dashboard.css';
+@import 'pages/lessons.css';
+@import 'pages/games.css';
