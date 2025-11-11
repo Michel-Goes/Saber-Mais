@@ -1,32 +1,29 @@
 .login-page-container {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   background: #E6EDFF;
-  min-height: 100vh;
-  position: relative;
+  box-sizing: border-box;
 }
 
 .header {
   height: 60px;
   display: flex;
   align-items: center;
-  padding: 20px 40px 20px 20px;
+  padding: 20px;
   background: #FAFAFA;
-  transform: translateX(-4%);
-  width: 106.2%;
-  margin-left: -2%;
+  width: 100%;
 }
 
 .star-icon {
   width: 50px;
   height: 50px;
   display: flex;
-  margin-left: 50%;
-  transform: translateY(15%);
+  margin-top: 8%;
 }
 
 .nav {
   display: flex;
   gap: 30px;
+  transform: translateX(-25%);
 }
 
 .nav a {
@@ -43,10 +40,8 @@
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0;
-  padding: 60px 10px;
-  max-width: 1300px;
-  margin: 0 auto;
+  padding: 60px 0;
+  max-width: 100%;
 }
 
 .books-section {
@@ -59,8 +54,6 @@
   height: 850px;
   width: 630px;
   display: flex;
-  transform: translateX(-15%);
-  margin-top: -5%;
 }
 
 .login-section {
@@ -68,10 +61,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 770px;
-  height: 900px;
-  margin-top: -12%;
-  margin-right: 5%;
+  width: 100%;
+  margin-top: -10%;
 }
 
 .login-card {
@@ -87,7 +78,7 @@
   width: 200px;
   height: 80px;
   display: block;
-  transform: translateX(65%);
+  transform: translateX(60%);
 }
 
 .welcome-text {
@@ -213,7 +204,7 @@
 }
 
 .login-button {
-  width: 480px;
+  width: 100%;
   padding: 8px;
   background: #E6EDFF;
   border: none;
@@ -224,7 +215,6 @@
   cursor: pointer;
   transition: background 0.3s;
   display: block;
-  transform: translateX(-5%);
 }
 
 .login-button:hover {
@@ -306,19 +296,19 @@
   border-radius: 20px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   background: white;
-  padding: 0 80px;
+  padding: 0 3%;
   margin-top: -3%;
   align-self: center;
-  width: 1500px;
   display: block;
-  transform: translateX(0.7%);
+  transform: translateX(1%);
+  box-sizing: border-box;
 }
 
 .star-icon-section {
-  width: 60px;
-  height: 60px;
+  width: 3%;
+  height: 3%;
   display: flex;
-  margin-left: -5%;
+  margin-left: -2%;
   transform: translateY(5%);
 }
 
@@ -326,10 +316,9 @@
   border: 2px solid rgba(0, 0, 0, 0.08);
   border-radius: 15px;
   width: 80%;
-  height: 100px;
+  height: 30%;
   margin: -22px auto 80px;
   text-align: center;
-  padding-top: 1%;
 }
 
 .bottom-header h2 {
@@ -345,45 +334,44 @@
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 150px;
-  max-width: 1500px;
-  margin: 200px auto;
-  margin-left: -3%;
+  max-width: 100%;
+  margin: 20% auto;
 }
 
 .course-card {
   flex: 1;
-  min-width: 400px;
-  min-height: 200px;
+  min-width: 300px;
+  min-height: 130px;
   background: white;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .course-image {
-  height: 133px;
   background-size: cover;
   background-position: center;
+  height: 200px;
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.card1 {
-  background: linear-gradient(135deg, #fff9db 0%, #ffeaa7 100%);
-}
-
-.card2 {
-  background: linear-gradient(135deg, #a8daff 0%, #81c3f7 100%);
-}
-
-.card3 {
-  background: linear-gradient(135deg, #d4e8ff 0%, #b3d9ff 100%);
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .course-content {
-  padding: 10px;
   position: relative;
-  height: 250px;
+  height: 200px;
 }
 
 .course-content h3 {
@@ -391,7 +379,7 @@
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 4px;
-  margin-top: 20%;
+  padding-left: 10px;
 }
 
 .course-content p {
@@ -399,7 +387,7 @@
   line-height: 1.4;
   color: #666;
   margin-bottom: 1px;
-  padding-right: 15px;
+  padding-left: 10px;
 }
 
 .view-course {
@@ -435,17 +423,598 @@
   text-align: left;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 1200px) {
+  .main-container {
+    max-width: 100%;
+  }
+  
+  .bottom-section {
+    width: 98%;
+  }
+  
+  .courses-grid {
+    gap: 180px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-container {
+    max-width: 100%;
+  }
+  
+  .books-image {
+    height: 750px;
+    width: 550px;
+  }
+  
+  .login-section {
+    width: 700px;
+    height: 800px;
+  }
+  
+  .bottom-section {
+    width: 1300px;
+    padding: 30px 60px;
+  }
+  
+  .courses-grid {
+    gap: 120px;
+    margin: 180px auto;
+  }
+  
+  .course-card {
+    min-width: 350px;
+  }
+}
+
+/* Tablets and small laptops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    padding: 15px 30px 15px 15px;
+    height: 50px;
+  }
+  
+  .star-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 40%;
+  }
+  
+  .nav {
+    gap: 20px;
+  }
+  
+  .nav a {
+    font-size: 16px;
+  }
+  
   .main-container {
     grid-template-columns: 1fr;
-    padding: 40px 30px;
+    padding: 40px 20px;
+    gap: 30px;
   }
-
+  
   .books-section {
     order: 2;
+    margin-top: 20px;
   }
-
+  
+  .books-image {
+    height: 400px;
+    width: 300px;
+    transform: translateX(0);
+  }
+  
   .login-section {
     order: 1;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: transparent;
+  }
+  
+  .login-card {
+    max-width: 450px;
+    padding: 40px 35px;
+  }
+  
+  .form-group {
+    width: 100%;
+  }
+  
+  .form-group input {
+    width: 100%;
+    transform: translateX(0);
+  }
+  
+  .form-group label {
+    transform: translateX(0);
+  }
+  
+  .login-button {
+    width: 100%;
+    transform: translateX(0);
+  }
+  
+  .toggle-password {
+    right: 15px;
+  }
+  
+  .remember-me {
+    transform: translateX(0);
+  }
+  
+  .bottom-section {
+    width: 100%;
+    transform: translateX(0);
+    margin-top: 20px;
+    padding: 30px 40px;
+  }
+  
+  .star-icon-section {
+    margin-left: 0;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .bottom-header {
+    width: 90%;
+    padding-top: 2%;
+  }
+  
+  .bottom-header h2 {
+    font-size: 24px;
+  }
+  
+  .bottom-header p {
+    font-size: 15px;
+  }
+  
+  .courses-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 60px auto;
+    margin-left: 0;
+  }
+  
+  .course-card {
+    min-width: 280px;
+  }
+}
+
+/* Mobile devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .login-page-container {
+    padding: 0 10px;
+  }
+  
+  .header {
+    padding: 10px 20px 10px 10px;
+    height: 45px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: auto;
+    padding-bottom: 15px;
+  }
+  
+  .star-icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 0;
+    transform: translateY(0);
+  }
+  
+  .nav {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .nav a {
+    font-size: 14px;
+  }
+  
+  .main-container {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+  
+  .books-section {
+    order: 2;
+    margin-top: 15px;
+  }
+  
+  .books-image {
+    height: 250px;
+    width: 200px;
+    transform: translateX(0);
+  }
+  
+  .login-section {
+    order: 1;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: transparent;
+  }
+  
+  .login-card {
+    max-width: 400px;
+    padding: 30px 25px;
+    margin: 0 auto;
+  }
+  
+  .login-logo {
+    transform: translateX(25%);
+    width: 150px;
+  }
+  
+  .welcome-text {
+    font-size: 18px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    transform: translateX(0);
+    height: 45px;
+    padding: 15px;
+  }
+  
+  .form-group label {
+    transform: translateX(0);
+    font-size: 15px;
+  }
+  
+  .login-button {
+    width: 100%;
+    transform: translateX(0);
+    padding: 12px;
+    font-size: 16px;
+  }
+  
+  .toggle-password {
+    right: 15px;
+  }
+  
+  .remember-me {
+    transform: translateX(0);
+    font-size: 14px;
+  }
+  
+  .form-options {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .forgot-password {
+    align-self: flex-end;
+  }
+  
+  .signup-text {
+    font-size: 15px;
+  }
+  
+  .divider {
+    font-size: 15px;
+  }
+  
+  .social-login {
+    gap: 10px;
+  }
+  
+  .social-button {
+    font-size: 16px;
+  }
+  
+  .bottom-section {
+    width: 100%;
+    transform: translateX(0);
+    margin-top: 15px;
+    padding: 25px 20px;
+  }
+  
+  .star-icon-section {
+    margin-left: 0;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .bottom-header {
+    width: 95%;
+    height: auto;
+    padding: 15px;
+  }
+  
+  .bottom-header h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .bottom-header p {
+    font-size: 14px;
+  }
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 40px auto;
+    margin-left: 0;
+  }
+  
+  .course-card {
+    min-width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .course-content {
+    padding: 15px;
+    height: 220px;
+  }
+  
+  .course-content h3 {
+    font-size: 18px;
+    margin-top: 15%;
+  }
+  
+  .course-content p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  .view-course {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  .footer {
+    font-size: 13px;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 575px) {
+  .login-page-container {
+    padding: 0 5px;
+  }
+  
+  .header {
+    padding: 8px 15px 8px 8px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    padding-bottom: 12px;
+  }
+  
+  .star-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    transform: translateY(0);
+  }
+  
+  .nav {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav a {
+    font-size: 12px;
+    padding: 5px;
+  }
+  
+  .main-container {
+    grid-template-columns: 1fr;
+    padding: 15px 10px;
+    gap: 15px;
+  }
+  
+  .books-section {
+    order: 2;
+    margin-top: 10px;
+  }
+  
+  .books-image {
+    height: 180px;
+    width: 150px;
+    transform: translateX(0);
+  }
+  
+  .login-section {
+    order: 1;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: transparent;
+  }
+  
+  .login-card {
+    max-width: 320px;
+    padding: 25px 20px;
+    margin: 0 auto;
+  }
+  
+  .login-logo {
+    transform: translateX(15%);
+    width: 120px;
+    height: 60px;
+  }
+  
+  .welcome-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    transform: translateX(0);
+    height: 42px;
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .form-group label {
+    transform: translateX(0);
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  
+  .login-button {
+    width: 100%;
+    transform: translateX(0);
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  .toggle-password {
+    right: 12px;
+  }
+  
+  .eye-icon {
+    width: 12px;
+    height: 10px;
+  }
+  
+  .remember-me {
+    transform: translateX(0);
+    font-size: 13px;
+  }
+  
+  .form-options {
+    font-size: 13px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password {
+    align-self: flex-end;
+    font-size: 13px;
+  }
+  
+  .signup-text {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  
+  .divider {
+    font-size: 14px;
+    padding: 4%;
+  }
+  
+  .social-login {
+    gap: 8px;
+  }
+  
+  .social-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+  
+  .bottom-section {
+    width: 100%;
+    transform: translateX(0);
+    margin-top: 10px;
+    padding: 20px 15px;
+  }
+  
+  .star-icon-section {
+    margin-left: 0;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .bottom-header {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .bottom-header h2 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  
+  .bottom-header p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 30px auto;
+    margin-left: 0;
+  }
+  
+  .course-card {
+    min-width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .course-image {
+    height: 120px;
+  }
+  
+  .course-content {
+    padding: 12px;
+    height: 200px;
+  }
+  
+  .course-content h3 {
+    font-size: 16px;
+    margin-top: 12%;
+    margin-bottom: 8px;
+  }
+  
+  .course-content p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+  
+  .view-course {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .footer {
+    font-size: 12px;
+    text-align: center;
+    padding: 12px 0;
+    margin: 15px -15px 0;
   }
 }
