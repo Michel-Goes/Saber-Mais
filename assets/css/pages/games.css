@@ -552,7 +552,9 @@
   }
   
   .game-card {
-    width: 500px;
+    /* width: 500px;
+    height: 554px; */
+    width: 38%;
     height: 554px;
   }
   
@@ -611,7 +613,7 @@
   
   .popular-card-blue,
   .popular-card-green {
-    width: 500px;
+    width: 30%;
     height: 300px;
     /* padding: 40px; */
   }
